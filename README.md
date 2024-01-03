@@ -1,6 +1,6 @@
 <div align="center">
 <h1> Who TF Unfollowed me? </h1>
-<h2> Using Python to find those Snakes🐍😡 </h2>
+... Using Python to find those Snakes🐍😡
 </div>
 
 <div align="center">
