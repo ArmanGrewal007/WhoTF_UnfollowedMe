@@ -1,11 +1,21 @@
-# Basic Working and thought process
+# Who TF Unfollowed me?
 
-We have a single script: `instagram_unfollowed_checker` which runs locally (A cronjob is set for this).
-We also have a log file: `main.log` for tracking who unfollowed us!
+<div align="center">
+<img src="https://media.giphy.com/media/26uf1EUQzKKGcIhJS/giphy.gif"/>
+</div>
 
-The python script does all the big lifting. Here is a summary of the work it does:
+## Basic working
 
-* Checks if internet is available or not, if not then halt all further processes and add an entry to our log file notifying us that today's run was unsuccessfull due to internet problems
-* Use `instaloader` module to find all *followers*, *following* and calculate *not_following_back* (taking care of the meme pages I follow)
-* I am using a test account **boogywoogy2024** to be used as a bot🤖 to check who unfollowed me on my original account **arman.singh.grewal**
-* This is the crontab: `0 12 * * * python3 /Users/armangrewal/Desktop/Research/InstaBOT/WhoTF_UnfollowedMe/instagram_unfollowed_checker.py`
+We have a single script: `instagram_unfollowed_checker` using which you can see whotf unfollowed you recently. Requirements:
+
+* A valid instagram *username* and *password*. (I would suggest creating a bot account, [here](https://www.instagram.com/accounts/emailsignup/))
+* target username, whose unfollowers you want to check
+
+## Local setup
+
+* Fork/Clone this repo to your local machine
+* Make sure you have Python 3.5+ installed in your system
+* Install necessary packages: `pip install -r requirements.txt`
+* Change the variables in `instagram_unfollowed_checker` script with your own
+* Run the script. 
+* I had about 400 followers and it took 1 minute to run. So, I would suggest add a debugger at the end for easier usage!
