@@ -5,7 +5,7 @@ password = ""
 # Enter the target username whose unfollowers you want to check
 target_username = ""
 # Add the usernames of meme-pages your follow, They can be exempted from "not_following_back" list)
-meme_pages_I_follow = {}
+meme_pages_I_follow = set()
 
 ########################################## Main script ##########################################
 import instaloader
@@ -26,5 +26,6 @@ print(f"\nFollowers: {len(followers)}")
 print(f"Following: {len(following)}")
 print(f"Not Following Back: {len(not_following_back)}")
 # pprint(not_following_back) # Uncomment to print the names of 🐍
+# Add debugger here
 
 print(f"\n------------------------ Ending:[{time.strftime('%Y-%m-%d %H:%M:%S')}] ------------------------")
